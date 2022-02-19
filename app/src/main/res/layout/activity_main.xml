@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e3eb"
+    android:layout_margin="8dp"
+    android:gravity="center"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:id="@+id/textview"
+
+        android:text="Dang nhap"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview"
+        android:hint="username" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginBottom="20sp"
+        android:hint="password" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/password"
+        android:layout_toLeftOf="@+id/quenmk"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/quenmk"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+
+        android:layout_marginRight="8dp"
+        android:text="Quen mk" />
+    <Button
+        android:id="@+id/help"
+        android:text="Tro giup"
+
+        android:layout_below="@+id/password"
+        android:layout_toRightOf="@+id/quenmk"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
